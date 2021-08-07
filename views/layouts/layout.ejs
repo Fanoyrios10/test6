@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>8ο Σύστημα Αεροπροσκόπων Χίου</title>
 
@@ -41,217 +40,18 @@
     <link rel="stylesheet" href="/dependencies/bootstrap-4/bootstrap-4.css">
     <link rel="stylesheet" href="/dependencies/fontawesome.css">
     <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/style-home.css">
+    <link rel="stylesheet" href="/styles/style-layout.css">
     <!--STYLES END-->
-    <style>
-      body {
-        background-color: rgb(255, 228, 196);
-      }
-
-      .main-body {
-        max-width: 1200px;
-        margin: auto;
-        background-color: white;
-        box-shadow: 0px 8px 40px 0px rgb(0, 0, 0);
-        z-index: 1;
-      }
-
-      .navbar5 {
-        overflow: hidden;
-        background-color: rgba(0, 0, 255, 0.623);
-      }
-
-      .navbar5 a {
-        float: left;
-        font-size: 16px;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 4px 6px;
-        text-decoration: none;
-      }
-
-      .dropdown5 {
-        float: left;
-        overflow: hidden;
-      }
-
-      .dropdown5 .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: rgb(255, 255, 255);
-        padding: 4px 6px;
-        background-color: inherit;
-        cursor: pointer;
-        font-family: inherit;
-        margin: 0;
-      }
-
-      .navbar5 a:hover,
-      .dropdown5:hover .dropbtn {
-        background-color: rgba(184, 168, 168, 0.712);
-        transition: 1s;
-      }
-
-      .navbar5 a:not(:hover),
-      .dropdown5:not(:hover) .dropbtn {
-        transition: 1s;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        top: 30px;
-        background-color: rgb(0, 0, 255);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 2;
-      }
-
-      .dropdown-content a {
-        float: none;
-        color: rgb(255, 255, 255);
-        font-weight: bolder;
-        border-bottom: 2px solid rgb(255, 0, 0);
-        padding: 4px 6px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-
-      .dropdown-content a:hover {
-        background-color: rgba(184, 168, 168, 0.712);
-      }
-
-      .dropdown5:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropbtn:not(:hover) .dropdown-content {
-        transition: display none, 800ms, ease;
-      }
-
-      .green_area {
-        background-color: rgb(0, 128, 0);
-      }
-
-      .navbar5 .green_area:hover {
-        background-color: rgb(0, 128, 0);
-      }
-
-      .navbar6 {
-        background-color: rgba(0, 0, 255, 0.623);
-        overflow: hidden;
-        margin: auto;
-        text-align: center;
-        display: none;
-        width: 100%;
-      }
-
-      .navbar6 a {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: rgb(255, 255, 255);
-        padding: 4px 6px;
-        background-color: inherit;
-        font-family: inherit;
-        width: 100%;
-        margin: 0;
-      }
-
-      .dropbtn2 {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: rgb(255, 255, 255);
-        padding: 4px 6px;
-        background-color: inherit;
-        font-family: inherit;
-        width: 100%;
-        margin: 0;
-        cursor: pointer;
-        border-bottom: 2px solid red;
-        border-top: 2px solid red;
-      }
-
-      .dropbtn2:focus {
-        outline: none;
-      }
-
-      .dropdown-content2 {
-        display: none;
-        position: relative;
-        height: auto;
-        background-color: rgba(31, 31, 100, 0.623);
-      }
-
-      .dropdown-content2 a {
-        display: block;
-        border-top: 2px dotted white;
-        border-bottom: 2px dotted white;
-      }
-
-      @keyframes rotateArrowUp {
-        from {
-          transform: rotate(0deg);
-        }
-
-        to {
-          transform: rotate(180deg);
-        }
-      }
-
-      @keyframes rotateArrowDown {
-        from {
-          transform: rotate(180deg);
-        }
-
-        to {
-          transform: rotate(0deg);
-        }
-      }
-
-      .transitionUp {
-        animation-name: rotateArrowUp;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-
-      .transitionDown {
-        animation-name: rotateArrowDown;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-
-      @media only screen and (max-width:780px) {
-        .navbar6 {
-          display: block;
-        }
-
-        .navbar5 {
-          display: none;
-        }
-      }
-
-      .site-title {
-        color: blue;
-        text-align: center;
-        background-color: white;
-      }
-
-    </style>
   </head>
 
   <body>
     <div class="main-body">
       <nav class="navbar5">
-        <a href="#home" title="Αρχική Σελίδα" class="green_area animate__animated animate__slideInDown"><i
-            class="fas fa-home"></i>
+        <a href="#home" title="Αρχική Σελίδα" class="green_area animate__animated animate__slideInDown"><i class="fas fa-home"></i>
         </a>
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Τι είναι...
+          <button class="dropbtn animate__animated animate__slideInDown">Τι είναι... 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -262,9 +62,9 @@
             <a href="#" class="animate__animated animate__bounceInLeft">Δίκτυο</a>
             <a href="#" class="animate__animated animate__bounceInLeft">Ε.Κ.Σ.</a>
           </div>
-        </div>
+        </div> 
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Το Σύστημα
+          <button class="dropbtn animate__animated animate__slideInDown">Το Σύστημα 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -276,7 +76,7 @@
           </div>
         </div>
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Δράσεις
+          <button class="dropbtn animate__animated animate__slideInDown">Δράσεις 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -289,7 +89,7 @@
           </div>
         </div>
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Χρήσιμα
+          <button class="dropbtn animate__animated animate__slideInDown">Χρήσιμα 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -302,7 +102,7 @@
           </div>
         </div>
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Συχνές ερωτήσεις
+          <button class="dropbtn animate__animated animate__slideInDown">Συχνές ερωτήσεις 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -310,7 +110,7 @@
           </div>
         </div>
         <div class="dropdown5">
-          <button class="dropbtn animate__animated animate__slideInDown">Εμπιστευτικά
+          <button class="dropbtn animate__animated animate__slideInDown">Εμπιστευτικά 
             <i class="fas fa-caret-down"></i>
           </button>
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
@@ -320,10 +120,8 @@
         </div>
         <a href="#" class="animate__animated animate__slideInDown">Επικοινωνία</a>
       </nav>
-      <nav class="navbar6 animate__animated animate__slideInDown">
-        <a href="#"
-          style="background-color: rgb(0, 128, 0); display: block; border-bottom: 2px solid red; border-top: 2px solid red;"><i
-            class="fas fa-home"></i></a>
+      <nav class="navbar6 animate__animated animate__slideInDown" >
+        <a href="#" style="background-color: rgb(0, 128, 0); display: block; border-bottom: 2px solid red; border-top: 2px solid red;"><i class="fas fa-home"></i></a>
         <div>
           <button class="dropbtn2">Τι είναι... <i class="fas fa-arrow-alt-circle-down"></i></button>
           <div class="dropdown-content2">
@@ -380,36 +178,33 @@
             <a href="#" class="animate__animated animate__bounceInLeft">Ομάδα</a>
           </div>
         </div>
-        <a href="#"
-          style="background-color: rgb(97,86,236); display: block; border-bottom: 2px solid red; border-top: 2px solid red;">Επικοινωνία</a>
+        <a href="#" style="background-color: rgb(97,86,236); display: block; border-bottom: 2px solid red; border-top: 2px solid red;">Επικοινωνία</a>
       </nav>
       <script>
         let dropbtn2 = document.querySelectorAll(".dropbtn2");
         dropbtn2.forEach(element => {
-          let sibling = element.nextElementSibling;
-          let child = element.lastChild
-          $(element).click(function () {
-            $(sibling).animate({
-              height: 'toggle'
-            })
-            if (child.classList.value === "fas fa-arrow-alt-circle-down" || child.classList.value ===
-              "fas fa-arrow-alt-circle-down transitionDown") {
-              $(child).removeClass("transitionDown")
-              $(child).addClass("transitionUp")
-            } else {
-              $(child).removeClass("transitionUp")
-              $(child).addClass("transitionDown")
-            }
-          });
-        })
-
+              let sibling = element.nextElementSibling;
+              let child = element.lastChild
+              $(element).click(function () { 
+                $(sibling).animate({
+                  height:'toggle'
+                })
+                if (child.classList.value === "fas fa-arrow-alt-circle-down" || child.classList.value === "fas fa-arrow-alt-circle-down transitionDown") {
+                  $(child).removeClass("transitionDown")
+                  $(child).addClass("transitionUp")
+                }else{
+                  $(child).removeClass("transitionUp")
+                  $(child).addClass("transitionDown")
+                }
+              });
+          })
       </script>
       <h1 class="site-title">8<sup>ο</sup> Σύστημα Αεροπροσκόπων Χίου</h1>
-      <%- body %>
+    <%- body %>
 
 
 
-      <!--
+    <!--
         Client-side Templates
         ========================
 
@@ -430,11 +225,11 @@
               stringfile before they're served.
     -->
 
-      <!--TEMPLATES-->
-      <!--TEMPLATES END-->
+    <!--TEMPLATES-->
+    <!--TEMPLATES END-->
 
 
-      <!--
+    <!--
         Server-side View Locals
         ========================
 
@@ -450,7 +245,7 @@
     -->
 
 
-      <!--
+    <!--
 
       Client-side Javascript
       ========================
@@ -473,17 +268,16 @@
 
     -->
 
-      <!--SCRIPTS-->
-      <script src="/dependencies/sails.io.js"></script>
-      <script src="/dependencies/bootstrap-4/bootstrap-4.bundle.js"></script>
-      <script src="/dependencies/cloud.js"></script>
-      <script src="/dependencies/jquery.min.js"></script>
-      <script src="/dependencies/lodash.js"></script>
-      <script src="/dependencies/moment.js"></script>
-      <script src="/dependencies/parasails.js"></script>
-      <script src="/dependencies/vue-router.js"></script>
-      <script src="/dependencies/vue.js"></script>
-      <!--SCRIPTS END-->
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <script src="/dependencies/bootstrap-4/bootstrap-4.bundle.js"></script>
+    <script src="/dependencies/cloud.js"></script>
+    <script src="/dependencies/jquery.min.js"></script>
+    <script src="/dependencies/lodash.js"></script>
+    <script src="/dependencies/moment.js"></script>
+    <script src="/dependencies/parasails.js"></script>
+    <script src="/dependencies/vue-router.js"></script>
+    <script src="/dependencies/vue.js"></script>
+    <!--SCRIPTS END-->
   </body>
-
 </html>
