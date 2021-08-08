@@ -180,25 +180,6 @@
         </div>
         <a href="#" style="background-color: rgb(97,86,236); display: block; border-bottom: 2px solid red; border-top: 2px solid red;">Επικοινωνία</a>
       </nav>
-      <script>
-        let dropbtn2 = document.querySelectorAll(".dropbtn2");
-        dropbtn2.forEach(element => {
-              let sibling = element.nextElementSibling;
-              let child = element.lastChild
-              $(element).click(function () { 
-                $(sibling).animate({
-                  height:'toggle'
-                })
-                if (child.classList.value === "fas fa-arrow-alt-circle-down" || child.classList.value === "fas fa-arrow-alt-circle-down transitionDown") {
-                  $(child).removeClass("transitionDown")
-                  $(child).addClass("transitionUp")
-                }else{
-                  $(child).removeClass("transitionUp")
-                  $(child).addClass("transitionDown")
-                }
-              });
-          })
-      </script>
       <h1 class="site-title">8<sup>ο</sup> Σύστημα Αεροπροσκόπων Χίου</h1>
       <button id="GoToTop" title="Σκρόλαρε στην αρχή!">&#8657;</button>
     <%- body %>
@@ -370,8 +351,6 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <script src="/dependencies/parasails.js"></script>
     <script src="/dependencies/vue-router.js"></script>
     <script src="/dependencies/vue.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/layout.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
